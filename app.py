@@ -9,22 +9,22 @@ from wtforms import StringField, SubmitField
 app = Flask(__name__)
 
 def load_links():
-    with open("D:/My Programs/AZ Hackathon/LC Data/final_links.txt") as f:
+    with open("LC Data/final_links.txt") as f:
         links = f.readlines()
     return links
 
 def load_idf():
-    with open('D:/My Programs/AZ Hackathon/LC Data/final_idf', 'rb') as f:
+    with open('LC Data/final_idf', 'rb') as f:
         idf = pickle.load(f)
     return idf
 
 def load_idf2():
-    with open('D:/My Programs/AZ Hackathon/LC Data/final_idf2', 'rb') as f:
+    with open('LC Data/final_idf2', 'rb') as f:
         idf2 = pickle.load(f)
     return idf2
 
 def load_data():
-    with open("D:/My Programs/AZ Hackathon/LC Data/final_data.txt", 'r') as f:
+    with open("LC Data/final_data.txt", 'r') as f:
         data = f.readlines()
     return data
 
